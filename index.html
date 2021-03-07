@@ -2,84 +2,163 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alexander Schulte</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    <header>
-      <h1>Welcome to the website of Alexander Schulte</h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="#This is me!">Home</a>
-          </li>
-          <li>
-            <a href="#Any Questions?">Contact</a>
-          </li>
-          <li>
-            <a href="#About Me">About Me</a>
-          </li>
-          <li>
-            <a href="#Career">Career</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <h2 id="This is me!">This is me!</h2>
-        <img
-          width="300"
-          height="300"
-          src="/images/AlexanderSchulte_Brighton.JPG"
-          alt="Alexander Schulte profile picture"
-        />
+    <div class="layout-grid">
+      <header class="header">
+        <h1 id="Main-Header">Alexander Schulte</h1>
 
-        <h3 id="About Me">About Me</h3>
+        <nav>
+          <ul>
+            <li class="grid-nav">
+              <a href="#About Me">About Me</a>
+            </li>
+            <li class="grid-nav">
+              <a href="#My Life">My Life</a>
+            </li>
+            <li class="grid-nav">
+              <a href="#Main Header">Home</a>
+            </li>
+            <li class="grid-nav">
+              <a href="#Any Questions?">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-        <p>
-          Here is something about me you can read about! To start this article
-          the right way I am telling you something about my life. I am 22 years
-          old and live in Ense (a small village next to Dortmund"). I was born
-          and raised in Dresden and moved to Dortmund. In my freetime I do lots
-          of sport, like soccer and basketball. By the way my favourite
-          basketball team are the Golden State Warriors.
-        </p>
-      </section>
+      <main class="grid-main">
+        <article class="Grid-About-Me">
+          <h2 id="About Me">About Me</h2>
 
-      <article>
-        <h2 id="Career">Career</h2>
-        <img
-          width="325"
-          height="400"
-          src="/images/Alexander_Schulte.jpg"
-          alt="Alexander Schulte football picture"
-        />
+          <img
+            width="200px"
+            height="200px"
+            class="Alexander-Beach1"
+            src="/images/AlexanderSchulte_Brighton.JPG"
+            alt="Alexander Schulte profile picture"
+          />
 
-        <h3>It´s football time!</h3>
-        <p>
-          Yeah as you know I like football very much.. I play football since I
-          was 3 years old. I started in Dresden and played there for 11 years.
-          With 14 I moved to Dortmund and played for Borussia Dortmund. Titles:
-        </p>
+          <h3 id="This is me!">This is me!</h3>
 
-        <ul>
-          <li>Bundsliga U19 Championship</li>
-        </ul>
-      </article>
+          <p class="Me-Time">
+            Here is something about me you can read about! To start this article
+            the right way I am telling you something about my life. I am 22
+            years old and live in Ense (a small village next to Dortmund"). I
+            was born and raised in Dresden and moved to Dortmund. In my freetime
+            I do lots of sport, like soccer and basketball. By the way my
+            favourite basketball team are the Golden State Warriors.
+          </p>
+        </article>
 
-      <h3>That´s the End!</h3>
+        <article class="My-Life">
+          <h2 id="My Life">My Life</h2>
 
-      <img
-        width="300"
-        height="300"
-        src="https://media.giphy.com/media/3oKIPyqTWsP720AOXe/giphy.gif"
-        alt="Guy
-      is getting hit by a Ball in a Gif"
-      />
-    </main>
-    <footer>
-      <a id="Any Questions?">Any questions?</a>
-      <a href="mailto:example@git.com">Just ask me!</a>
-    </footer>
+          <div class="Alexander-Schulte-Frame">
+            <img
+              width="200px"
+              height="200px"
+              class="Alexander-Beach"
+              src="/images/Alexander_Schulte.jpg"
+              alt="Alexander Schulte football picture"
+            />
+          </div>
+
+          <h3>It´s football time!</h3>
+          <p class="P-Football-Time">
+            Yeah as you know I like football very much.. I play football since I
+            was 3 years old. I started in Dresden and played there for 11 years.
+            As you can imagine, it was kind of hard to combine football with
+            school. Normally I had at least three football sessions plus a game
+            in a week. Since I was ten I had five football sessions a week plus
+            game. I went do a special sport school in Dresden, which is focused
+            to comine professional sport with the duty of school. With 14 I
+            moved to Dortmund and played for Borussia Dortmund. At my Time in
+            Dortmund I made memories I do not want to miss my whole life! In the
+            U15 I played for the German national team and had a tournament in
+            the Caribik. The following years I travelled a lot due to the
+            tournements and international games. The best trips were to Namibia
+            and South Korea but also the games in the Youth League, so I saw
+            most of the big cities in Europe. In the U23 I got injured and had
+            to quit with professional football. Titles: U19 German National
+            Championship
+          </p>
+        </article>
+
+        <article class="Australia">
+          <h2 id="Australia">Australia</h2>
+
+          <img
+            class="Alexander-Beach"
+            src="/images/Melbourne.jpg"
+            alt="Alexander Schulte in Melbourne"
+          />
+          <div class="Phillip-Island-Frame">
+            <img
+              class="Alexander-Beach"
+              src="/images/Phillip_Island.JPG"
+              alt="Alexander Schulte on Phillip_Island"
+            />
+          </div>
+
+          <div class="Australia-Sunrise-Frame">
+            <img
+              class="Alexander-Beach"
+              src="/images/Australia_Sunrise.JPG"
+              alt="Sunrise with kangeroos infront"
+            />
+          </div>
+
+          <h3>See you Down Under!</h3>
+          <p class="Down-Under">
+            After my bad injury I wanted do get my mind clear. A fresh start in
+            my new life! My Choice to travel around Australia a time was one of
+            the best decisions in my life so far! I saw so many beautiful places
+            (I can not count every beach I saw) and met a lot new friends there.
+            I bought a big car and started to travel around the south and east
+            coast. This two pictures of me are showing two of my favourite
+            places:
+          </p>
+
+          <ul class="List-Australia">
+            <li class="List-Australia-Phillip-Island">
+              <strong>Phillip Island</strong>: What an island! The best thing
+              here a the smallest pinguins of the world! In the evening you can
+              see them coming out of the water to go back to there families. It
+              is definitely worth a visit here. Come with your car and you can
+              drive around the whole island in one day and see a lot of things.
+              Not only the pinguins, especially the Koala Park is great! Here
+              you can see Koalas in there natural habitat: On eucalyptus trees!
+            </li>
+
+            <li class="List-Australia-Melbourne">
+              <strong>Melbourne</strong>: I. Love. This. City. You want to eat
+              amazing food? Come to Melbourne. You want to enjoy the nightlife?
+              Come to Melbourne. You want to see great architecture? Come to
+              Melbourne. This city has its own vibe and is one of the most
+              enjoyable and relaxed city I was. Everybody is friendly and kind,
+              you can go to the train station here and you can have five new
+              friends in ten minutes if you want to. What else can I say about
+              this city... Melbourne? One day I am coming back to you!
+            </li>
+          </ul>
+        </article>
+
+        <h3>That´s the End!</h3>
+      </main>
+
+      <footer class="grid-footer">
+        <a id="Any Questions?">Any questions?</a>
+        <a href="mailto:example@git.com">Just ask me!</a>
+      </footer>
+    </div>
   </body>
 </html>
