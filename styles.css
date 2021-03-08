@@ -1,0 +1,94 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+.body-grid {
+  display: grid;
+  grid-template-rows: [header] 100px [nav] 50px [content] auto [footer] 100px;
+  row-gap: 8px;
+}
+
+.header {
+  grid-row: header;
+}
+
+.header-title-container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+  padding: 0;
+  color: #ed6a5a;
+}
+
+.content {
+  grid-row: content;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+/* Interest Box */
+.content-box {
+  color: grey;
+  padding: 8px;
+  box-shadow: 0px 9px 15px -1px rgba(0, 0, 0, 0.63);
+}
+
+.about-me {
+  background-color: #9bc1bc;
+}
+
+.career {
+  background-color: #5ca4a9;
+}
+
+.australia {
+  background-color: darkolivegreen;
+}
+
+.info-footer {
+  grid-row: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Alexander-Beach {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  max-height: 300px;
+
+@media screen and (min-width: 800px) {
+  .body-grid {
+    grid-template-columns: [left-gutter] 80px [content] auto [right-gutter] 80px;
+  }
+
+  .header {
+    grid-column: content;
+  }
+
+  .content {
+    grid-column: content;
+  }
+
+  .info-footer {
+    grid-column: content;
+  }
+}
+
+/*@media print {
+  h2 {
+    color: red;
+  }
+}
