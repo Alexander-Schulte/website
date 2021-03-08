@@ -10,7 +10,7 @@ html {
 .body-grid {
   display: grid;
   grid-template-rows: [header] 100px [nav] 50px [content] auto [footer] 100px;
-  row-gap: 8px;
+  row-gap: 15px;
 }
 
 .header {
@@ -23,6 +23,19 @@ html {
   height: 100%;
   align-items: center;
 }
+
+.nav-link {
+    grid-row: nav;
+    
+}
+
+.nav-link-container {
+    display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
 
 .header h1 {
   margin: 0;
@@ -37,23 +50,48 @@ html {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
-/* Interest Box */
+
+/*
 .content-box {
-  color: grey;
-  padding: 8px;
-  box-shadow: 0px 9px 15px -1px rgba(0, 0, 0, 0.63);
+  grid-template-rows:
 }
+*/
 
 .about-me {
-  background-color: #9bc1bc;
+    grid-column: 1 / 4;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+
+
 .career {
-  background-color: #5ca4a9;
+    grid-column: 1 / 4;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .australia {
-  background-color: darkolivegreen;
+    grid-column: 1 / 4;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.phillip-island {
+    grid-column: 1 / 4;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.melbourne {
+    grid-column: 1 / 4;
+    display: flex;
+    flex-wrap: wrap;
+    
+  
 }
 
 .info-footer {
@@ -68,6 +106,7 @@ html {
   height: 100%;
   width: 100%;
   max-height: 300px;
+}
 
 @media screen and (min-width: 800px) {
   .body-grid {
@@ -85,6 +124,17 @@ html {
   .info-footer {
     grid-column: content;
   }
+
+  .nav-link {
+    grid-row: nav;
+    
+}
+
+.nav-link-container {
+    display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
 }
 
 /*@media print {
