@@ -1,0 +1,134 @@
+.body-grid {
+  display: grid;
+  grid-template-rows: [header] 100px [nav] 50px [content] auto [footer] 100px;
+  row-gap: 15px;
+}
+
+.header {
+  grid-row: header;
+}
+
+.header-title-container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.nav-link {
+  grid-row: nav;
+}
+
+.nav-link-container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.header-title {
+  margin: 0;
+  padding: 0;
+  color: var(--heading-color);
+}
+
+.content {
+  grid-row: content;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+/*
+  .content-box {
+    grid-template-rows:
+  }
+  */
+
+.about-me {
+  grid-column: 1 / 4;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  background-color: var(--content-background-color);
+}
+
+.career {
+  grid-column: 1 / 4;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  background-color: var(--content-background-color);
+}
+
+.australia {
+  grid-column: 1 / 4;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--content-background-color);
+}
+
+.australia-phillip-island {
+  grid-column: 1 / 4;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--content-background-color);
+}
+
+.australia-melbourne {
+  grid-column: 1 / 4;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--content-background-color);
+}
+
+.info-footer {
+  grid-row: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--content-background-color);
+}
+
+.Alexander-Beach {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  max-height: 300px;
+}
+
+@media screen and (min-width: 800px) {
+  .body-grid {
+    grid-template-columns: [left-gutter] 150px [content] auto [right-gutter] 150px;
+    grid-template-rows: [header] 100px [nav] 50px [content] auto [footer] 100px;
+  }
+
+  .header {
+    grid-column: content;
+  }
+
+  .content {
+    grid-column: content;
+  }
+
+  .info-footer {
+    grid-column: content;
+  }
+
+  .nav-link {
+    grid-column: content;
+  }
+
+  .nav-link-container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+  }
+}
+
+/*@media print {
+    h2 {
+      color: red;
+    }
+    */
