@@ -1,0 +1,16 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.5em;
+  font-style: normal;
+  color: var(--heading-color);
+}
